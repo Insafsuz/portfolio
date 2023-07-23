@@ -7,6 +7,7 @@
 }
 
 .intro {
+  z-index: 2;
   min-width: 230px;
   display: flex;
   flex-direction: column;
@@ -51,6 +52,7 @@
   position: absolute;
   left: 50%;
   bottom: 38px;
+  z-index: 2;
   transform: translateX(-50%);
   text-align: center;
   cursor: pointer;
@@ -95,12 +97,12 @@
 }
 
 .shapes {
-  position: absolute;
+  position: absolute !important;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 1;
 }
 .shape {
   position: absolute;
