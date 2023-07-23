@@ -1,0 +1,151 @@
+.home {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  min-width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__img {
+    max-width: 108px;
+    margin-bottom: 1.5rem;
+  }
+  &__name {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--thirdColor);
+    margin-bottom: 1rem;
+  }
+  &__edocation {
+    font-size: 1.1rem;
+    color: var(--thirdColor);
+    margin-bottom: 0.5rem;
+  }
+  &__btn {
+    display: inline-block;
+  }
+}
+
+.socials-list {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem 0 1.5rem 0;
+  &__item {
+  }
+  &__link {
+    font-size: 1.4rem;
+    color: var(--thirdColor);
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      color: hsl(45, 100%, 51%);
+    }
+  }
+}
+
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 38px;
+  transform: translateX(-50%);
+  text-align: center;
+  cursor: pointer;
+  &__text {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+}
+.mouse {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 26px;
+  border: 2px solid var(--textColor);
+  border-radius: 16px;
+}
+.wheel {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  height: 4px;
+  width: 4px;
+  border-radius: 100%;
+  background-color: var(--textColor);
+  animation: ani-mouse 2s linear infinite;
+  @keyframes ani-mouse {
+    0% {
+      top: 29%;
+    }
+    15% {
+      top: 50%;
+    }
+    50% {
+      top: 50%;
+    }
+    100% {
+      top: 29%;
+    }
+  }
+}
+
+.shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.shape {
+  position: absolute;
+}
+.s1 {
+  top: 10%;
+  left: 10%;
+}
+.s2 {
+  top: 30%;
+  left: 25%;
+}
+.s3 {
+  left: 15%;
+  bottom: 30%;
+}
+.s4 {
+  left: 10%;
+  bottom: 10%;
+}
+.s5 {
+  top: 10%;
+  left: 45%;
+}
+.s6 {
+  left: 40%;
+  bottom: 10%;
+}
+.s7 {
+  top: 20%;
+  right: 30%;
+}
+.s8 {
+  right: 30%;
+  bottom: 20%;
+}
+.s9 {
+  top: 10%;
+  right: 10%;
+}
+.s10 {
+  top: 45%;
+  right: 20%;
+}
+.s11 {
+  right: 10%;
+  bottom: 10%;
+}

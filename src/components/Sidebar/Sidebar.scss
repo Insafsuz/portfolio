@@ -1,0 +1,49 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  min-height: 100vh;
+  padding: 2.5rem 0;
+  width: 110px;
+  border-right: 1px solid var(--borderColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  &__menu {
+  }
+  &__footer {
+  }
+  &__copyright {
+    font-size: 0.9rem;
+    color: hsl(245, 14%, 65%);
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+  }
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--logoColor);
+  span {
+    color: hsl(353, 100%, 65%);
+  }
+}
+.menu-sidebar {
+  &__list {
+    display: grid;
+    gap: 1.5rem;
+  }
+  &__item {
+  }
+  &__link {
+    font-size: 25px;
+    color: var(--iconColor);
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      color: hsl(45, 100%, 51%);
+    }
+  }
+}

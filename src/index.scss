@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+$fontFamily: 'Rubik', sans-serif;
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body[data-theme='light'] {
+  --bgColor: hsl(0, 0%, 100%);
+  --textColor: hsl(243, 16%, 43%);
+  --secondColor: hsl(244, 18%, 32%);
+  --thirdColor: hsl(244, 24%, 26%);
+  --iconColor: hsl(244, 24%, 26%);
+  --logoColor: hsl(244, 27%, 20%);
+  --borderColor: hsla(0, 0%, 0%, 0.051);
+  --scrollUpBg: hsla(0, 0%, 0%, 0.2);
+}
+
+body[data-theme='dark'] {
+  --bgColor: hsl(244, 24%, 26%);
+  --textColor: hsl(0, 0%, 100%);
+  --secondColor: hsl(0, 0%, 100%);
+  --thirdColor: hsl(0, 0%, 100%);
+  --iconColor: hsl(245, 14%, 65%);
+  --logoColor: hsl(0, 0%, 100%);
+  --borderColor: hsla(0, 0%, 100%, 0.102);
+  --scrollUpBg: hsla(0, 0%, 0%, 0.2);
+}
+
+body {
+  font-family: $fontFamily;
+  background-color: var(--bgColor);
+  color: var(--textColor);
+}
+
+.page {
+  margin-left: 110px;
+}
+
+.container {
+  max-width: 1080px;
+  padding: calc(15 / 16) 0;
+  margin: 0px auto;
+}
+
+.section {
+  &__title {
+    font-size: calc(36 / 16);
+    line-height: 1.2;
+    font-weight: 700;
+    margin-left: 0.875rem;
+    margin-bottom: 3.75rem;
+    position: relative;
+    &:before {
+      content: '';
+      background: url(./assets/dots-bg.svg);
+      height: 2.25rem;
+      width: 2.25rem;
+      position: absolute;
+      left: -0.875rem;
+      top: -0.875rem;
+    }
+  }
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  line-height: 1;
+  border-radius: 1.875rem;
+  background-color: hsl(353, 100%, 65%);
+  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+  border: 1px solid transparent;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
