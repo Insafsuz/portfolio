@@ -1,6 +1,12 @@
+import About from './components/About/About'
 import Home from './components/Home/Home'
+import Portfolio from './components/Portfolio/Portfolio'
+import Pricing from './components/Pricing/Pricing'
+import Resume from './components/Resume/Resume'
 import ScrollUp from './components/ScrollUp/ScrollUp'
+import Services from './components/Services/Services'
 import Sidebar from './components/Sidebar/Sidebar'
+import Testimonials from './components/Testimonials/Testimonials'
 import ThemeSwitcher from './components/ThemeSwitcher/ThemeSwitcher'
 
 function App() {
@@ -9,16 +15,12 @@ function App() {
       <Sidebar />
       <main className='page'>
         <Home />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <About />
+        <Services />
+        <Resume />
+        <Pricing />
+        <Portfolio />
+        <Testimonials />
       </main>
       <ThemeSwitcher />
       <ScrollUp />

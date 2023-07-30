@@ -14,8 +14,10 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-parallax-mouse": "^2.0.1",
+    "react-scroll": "^1.8.9",
     "react-simple-typewriter": "^5.0.1",
-    "sass": "^1.63.6"
+    "sass": "^1.63.6",
+    "swiper": "^10.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",

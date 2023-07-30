@@ -1,0 +1,126 @@
+.portfolio {
+  &__menu {
+    display: flex;
+    gap: 1.875rem;
+    margin-bottom: 2.5rem;
+    @media (max-width: 767px) {
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem;
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    @media (max-width: 424px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 5px 20px 0 rgba(69, 67, 96, 0.1);
+    border-radius: 20px;
+    @media (max-width:767px){
+      justify-self: center;
+    }
+    &:hover {
+      .card-portfolio__btn {
+        opacity: 1;
+      }
+      .card-portfolio__title,
+      .card-portfolio__title {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .card-portfolio__mask {
+        opacity: 0.9;
+      }
+      .card-portfolio__category {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.menu-portfolio {
+  &__item {
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    &.active {
+      color: #ff4c60;
+    }
+    &:hover {
+      color: #ff4c60;
+    }
+  }
+}
+.card-portfolio {
+  &__thumbnail {
+  }
+  &__img {
+    width: 100%;
+    max-width: 330px;
+  }
+  &__mask {
+    background-color: #6c6ce5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  &__category {
+    font-size: 0.875rem;
+    color: #fff;
+    background-color: #ff4c60;
+    border-bottom-left-radius: 0.98rem;
+    border-bottom-right-radius: 0.98rem;
+    position: absolute;
+    top: 0;
+    left: 1.5rem;
+    padding: 3px 10px;
+    top: 0;
+    transform: translateY(-40px);
+    transition: transform 0.3s ease;
+  }
+  &__title {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-left: 0.98rem;
+    padding: 0 1.25rem;
+    position: absolute;
+    top: 3.75rem;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: 0.3s;
+    font-weight: 700;
+  }
+  &__btn {
+    font-size: 1.25rem;
+    color: #fff;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffd15c;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 42px;
+    transition: 0.3s;
+    opacity: 0;
+  }
+}

@@ -11,6 +11,15 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  transition: left 0.3s ease;
+  background-color: var(--bgColor);
+  @media (max-width: 1023px) {
+    left: -110px;
+    &.active {
+      left: 0;
+    }
+  }
+
   &__menu {
   }
   &__footer {
@@ -37,13 +46,41 @@
     gap: 1.5rem;
   }
   &__item {
+    cursor: pointer;
   }
   &__link {
     font-size: 25px;
     color: var(--iconColor);
     transition: color 0.3s ease-in-out;
+    &.active {
+      color: hsl(45, 100%, 51%);
+    }
     &:hover {
       color: hsl(45, 100%, 51%);
+    }
+  }
+}
+
+.menu-button {
+  display: none;
+  @media (max-width: 1023px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 25px;
+    left: 20px;
+    cursor: pointer;
+    height: 40px;
+    width: 45px;
+    background-color: var(--bgColor);
+    border: 1px solid #e8dfec;
+    color: var(--textColor);
+    font-size: 1.3rem;
+    z-index: 100;
+    transition: left 0.3s ease;
+    &.active {
+      left: 125px;
     }
   }
 }

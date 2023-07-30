@@ -1,0 +1,135 @@
+.about {
+  &__row {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    gap: 1.875rem;
+    margin-bottom: 4.37rem;
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+      max-width: 500px;
+      margin: 0 auto 4.37rem auto;
+      text-align: center;
+    }
+  }
+
+  &__img {
+    @media (max-width: 767px) {
+      justify-self: center;
+    }
+  }
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.875rem;
+    padding: 1.875rem;
+    background-color: var(--bgSecondColor);
+    box-shadow: 0 5px 20px 0 hsla(244, 18%, 32%, 0.1);
+    border-radius: 20px;
+    position: relative;
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-right: 15px solid var(--triangle);
+      position: absolute;
+      top: 20%;
+      left: -15px;
+      @media (max-width: 767px) {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid var(--triangle);
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  &__details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.875rem;
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(2, 150px);
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    @media (max-width: 424px) {
+      grid-template-columns: repeat(2, 130px);
+    }
+  }
+  &__item {
+    display: flex;
+    gap: 1.5rem;
+  }
+  &__title {
+  }
+}
+
+.info-about {
+  &__description {
+  }
+  &__text {
+    margin-bottom: 1rem;
+    text-align: justify;
+    line-height: 1.7;
+  }
+  &__btn {
+  }
+  &__skills {
+  }
+}
+
+.skills-info-about {
+  &__column {
+    &:not(:last-child) {
+      margin-bottom: 1.25rem;
+    }
+  }
+  &__skill {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  &__title {
+  }
+  &__percent {
+  }
+  &__progress {
+    height: 7px;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+  }
+  &__bar {
+    height: 7px;
+    border-radius: 15px;
+  }
+}
+
+.item-about {
+  &__icon {
+    font-size: 2.25rem;
+    color: var(--detailsIconColor);
+  }
+  &__info {
+  }
+  &__number {
+    font-size: 1.87rem;
+    font-weight: 700;
+    color: var(--textColor);
+    line-height: 1.2;
+    @media (max-width: 767px) {
+      font-size: 1.4rem;
+    }
+  }
+  &__text {
+    line-height: 1.7;
+    @media (max-width: 767px) {
+      font-size: 0.8rem;
+    }
+  }
+}
