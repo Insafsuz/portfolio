@@ -1,4 +1,5 @@
 import About from './components/About/About'
+import Contact from './components/Contact/Contact'
 import Home from './components/Home/Home'
 import Portfolio from './components/Portfolio/Portfolio'
 import Pricing from './components/Pricing/Pricing'
@@ -21,6 +22,7 @@ function App() {
         <Pricing />
         <Portfolio />
         <Testimonials />
+        <Contact />
       </main>
       <ThemeSwitcher />
       <ScrollUp />

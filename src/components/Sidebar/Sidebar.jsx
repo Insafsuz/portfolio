@@ -18,9 +18,9 @@ const Sidebar = () => {
 
   return (
     <aside className={`sidebar ${active ? 'active' : ''}`}>
-      <a href='#' className='logo'>
+      <div className='logo'>
         B<span>.</span>
-      </a>
+      </div>
       <nav className='sidebar__menu menu-sidebar'>
         <ul className='menu-sidebar__list'>
           <li className='menu-sidebar__item'>

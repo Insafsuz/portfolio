@@ -1,6 +1,5 @@
+@use 'sass:math';
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
-
-$fontFamily: 'Rubik', sans-serif;
 
 * {
   padding: 0px;
@@ -112,13 +111,13 @@ body[data-theme='dark'] {
 }
 
 body {
-  font-family: $fontFamily;
+  font-family: 'Rubik', sans-serif;
   background-color: var(--bgColor);
   color: var(--textColor);
 }
 
 .page {
-  margin-left: 110px;
+  margin-left: calc(110px / 16px) + rem;
   @media (max-width: 1023px) {
     margin-left: 0;
   }
@@ -131,7 +130,7 @@ body {
 }
 
 .section {
-  padding: 7rem 0 2rem 0;
+  padding: calc(112px / 16px) + rem 0 calc(32px / 16px) + rem 0;
   @media (max-width: 767px) {
     padding: 3rem 0 2rem 0;
   }
